@@ -92,8 +92,8 @@ function setup() {
   analyzer = new p5.Amplitude();
   analyzer.setInput(mic);
   
-  createCanvas(1920,1080); //배경이미지 사이즈에 맞춤
-  //createCanvas(windowWidth, windowHeight);
+  //createCanvas(1920,1080); //배경이미지 사이즈에 맞춤
+  createCanvas(windowWidth, windowHeight);
   bg=loadImage('deepsea.jpg') // 배경이미지(파일명/이미지명)
   frameRate(30);
 
