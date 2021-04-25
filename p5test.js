@@ -96,7 +96,6 @@ function setup() {
   //createCanvas(1920,1080); //배경이미지 사이즈에 맞춤
   createCanvas(windowWidth, windowHeight);
   
-  image(bg, 0, 0);
   //background(bg);
   frameRate(30);
 
@@ -115,7 +114,7 @@ function draw() {
   let level = analyzer.getLevel();
   soundFile.amp(3);
   
-  
+  image(bg, 0, 0);
   if (random(0, 7)>6){ //확률로 물고기 수 조절
     Fishes.push(new fish(createVector(random(120, windowWidth), random(120, windowHeight))));
   }
