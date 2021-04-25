@@ -93,8 +93,8 @@ function setup() {
   analyzer = new p5.Amplitude();
   analyzer.setInput(mic);
   
-  createCanvas(800,800); //배경이미지 사이즈에 맞춤
-  //createCanvas(windowWidth, windowHeight);
+  //createCanvas(800,800); //배경이미지 사이즈에 맞춤
+  createCanvas(windowWidth, windowHeight);
   
   //background(bg);
   frameRate(30);
