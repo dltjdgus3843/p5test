@@ -96,7 +96,8 @@ function setup() {
   //createCanvas(1920,1080); //배경이미지 사이즈에 맞춤
   createCanvas(windowWidth, windowHeight);
   
-  background(bg);
+  image(bg, 0, 0);
+  //background(bg);
   frameRate(30);
 
   for (var i = 0; i < num; i++) {
