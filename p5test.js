@@ -8,6 +8,7 @@ let soundFile, analyzer, delay, mic, reverb;
 function preload(){
   soundFormats('ogg', 'mp3');
   soundFile = loadSound('ICT.mp3');
+  bg=loadImage('deepsea.jpg'); // 배경이미지(파일명/이미지명)
 }
 
 function mousePressed(){
@@ -94,7 +95,8 @@ function setup() {
   
   //createCanvas(1920,1080); //배경이미지 사이즈에 맞춤
   createCanvas(windowWidth, windowHeight);
-  bg=loadImage('deepsea.jpg') // 배경이미지(파일명/이미지명)
+  
+  background(bg);
   frameRate(30);
 
   for (var i = 0; i < num; i++) {
@@ -112,7 +114,7 @@ function draw() {
   let level = analyzer.getLevel();
   soundFile.amp(3);
   
-  background(bg)
+  
   if (random(0, 7)>6){ //확률로 물고기 수 조절
     Fishes.push(new fish(createVector(random(120, windowWidth), random(120, windowHeight))));
   }
